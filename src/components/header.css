@@ -1,0 +1,27 @@
+header{
+    display: block;
+    justify-content: center;
+    width: 90vw;
+    font-size: 40px;
+  }
+  
+  .logo_name{
+    float: left;
+    margin-block: 0px;
+    padding: 20px;
+  }
+  
+  .logo_menubox{
+    display: flex;
+    float: right;
+    padding: 20px 0px;
+  }
+  
+  .logo_menubox_item{
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-size: cover;
+    background-image: url(../img/4.jpg);
+  }
