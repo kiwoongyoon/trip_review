@@ -3,6 +3,7 @@ header{
     justify-content: center;
     width: 90vw;
     font-size: 40px;
+    margin: 20px;
   }
   
   .logo_name{
@@ -19,9 +20,11 @@ header{
   
   .logo_menubox_item{
     float: right;
-    width: 20px;
-    height: 20px;
     padding: 10px;
-    background-size: cover;
-    background-image: url(../img/4.jpg);
+    width: 40px;
+    height: 40px;
+    content: url(../img/4.jpg);
+    background-size:cover;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
   }

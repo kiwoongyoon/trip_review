@@ -33,27 +33,61 @@ const nation_list=[
     }
 ]
 
-const select_nation=()=>{
+const select_nation=([currunt_nation, set_current_nation])=>{
     return(
         <div className="select_nation">
             {nation_list.map((nation)=>(
-                select_nation_element(nation)
+                select_nation_element(nation, set_current_nation)
             ))}
         </div>
     )
 }
 
-const select_nation_element=(props)=>{
-    const{id, nation_name, ...inputProp} = props
-    const onclick = (e)=>{
+const select_nation_element=(props, setter)=>{
+    const{id, name, url} = props
+    const onclick = ()=>{
         console.log(id);
-        e.preventDefault() ;
+        console.log(name);
+        setter(id);
     }
     return(
         <div key={id} className ="select_nation_element" onClick={onclick}>
-            <label>{nation_name}</label>
+            <label>{name}</label>
         </div>
     )
 }
 
-export default select_nation 
+const city_list={
+    "1": [
+        "123", "sdfsfs", "sdfaf"
+    ],
+    "2": [
+        "ㅇㄴㄹㄴㄹ", "sdfsfs", "ㅇㅇㄷㅇ"
+    ],
+    "3": [
+        "파리", "sdfsfs", "33ㄴㄹㄴㅇ", "sdfaf"
+    ],
+    "4": [
+        "로마", "sdfsfs", "ㅇㄷ", "sdfaf"
+    ],
+    "5": [
+        "LA", "seded", "ㄴ", "ㅊ"
+    ],
+    "6": [
+        "한국", "22ssaa", "ㅇ", "sdfaf"
+    ],
+}
+
+const select_city=(currunt_nation)=>{
+    return(
+        <div className="select_city">
+            {city_list[currunt_nation].map((city)=>(
+                <div key={city} className="select_city_element">
+                    <label>{city}</label>
+                </div>
+            ))}
+        </div>
+    )
+}
+
+export {select_nation, select_city}
