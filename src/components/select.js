@@ -90,4 +90,17 @@ const select_city=(currunt_nation)=>{
     )
 }
 
-export {select_nation, select_city}
+//도시별 테그리스트
+const select_tag=(currunt_nation)=>{
+    return(
+        <div className="select_city">
+            {city_list[currunt_nation].map((city)=>(
+                <div key={city} className="select_city_element">
+                    <label>{city}</label>
+                </div>
+            ))}
+        </div>
+    )
+}
+
+export {select_nation, select_city, select_tag}

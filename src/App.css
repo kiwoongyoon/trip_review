@@ -1,12 +1,13 @@
 .App {
+  position: relative;
+  top:0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
   height: 200vh;
   background-image: url(./img/3.png);
-  background-size: 100vw 100vh 
+  background-size: 100vw 200vh 
 }
 
 .select{

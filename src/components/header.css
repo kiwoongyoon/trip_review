@@ -1,29 +1,36 @@
 header{
-    display: block;
-    justify-content: center;
-    width: 90vw;
-    font-size: 40px;
-    margin: 20px;
-  }
-  
-  .logo_name{
-    float: left;
-    margin-block: 0px;
-    padding: 20px;
-  }
-  
-  .logo_menubox{
-    display: flex;
-    float: right;
-    padding: 20px 0px;
-  }
-  
-  .logo_menubox_item{
-    float: right;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background-size:cover;
-    background-origin: padding-box;
-    background-repeat: no-repeat;
-  }
+  background-color: lightpink;
+  width: 100vw;
+  font-size: 40px;
+  margin: 0px 0px;
+}
+
+.logo_name{
+  float: left;
+  margin-block: 0px;
+  padding: 20px;
+}
+
+.logo_menubox{
+  display: flex;
+  float: right;
+  padding: 20px 0px;
+}
+
+.logo_menubox_item{
+  float: right;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.logo_menubox_login{
+  background-image: url("comp_res/login.png");
+}
+
+.logo_menubox_signup{
+  background-image: url("comp_res/signup.png");
+}

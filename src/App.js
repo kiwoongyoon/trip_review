@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.css';
 import header from './components/header';
-import {select_nation,select_city} from './components/select';
+import {select_nation,select_city,select_tag} from './components/select';
 
 function App() {
   const [currunt_nation, set_current_nation] = useState("1")
@@ -22,7 +22,6 @@ function App() {
             지도지도지도<br/>지도지도지도넣기<br/>
           </div>
         </div>
-        <div className='selected_city'/>
         <h1>{currunt_nation} 여행 후기!</h1>
         <div className='review_board'>
           <div className='review_board_content'>
