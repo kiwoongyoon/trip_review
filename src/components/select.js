@@ -1,37 +1,5 @@
 import "./select.css"
-
-const nation_list=[
-    {
-        id: "1",
-        name: "america",
-        url: "..img/america.png"
-    },
-    {
-        id: "2",
-        name: "china",
-        url: "..img/america.png"
-    },
-    {
-        id: "3",
-        name: "japan",
-        url: "..img/america.png"
-    },
-    {
-        id: "4",
-        name: "germany",
-        url: "..img/america.png"
-    },
-    {
-        id: "5",
-        name: "singapore",
-        url: "..img/america.png"
-    },
-    {
-        id: "6",
-        name: "france",
-        url: "..img/america.png"
-    }
-]
+import nation_list from './data/data.json';
 
 const select_nation=([currunt_nation, set_current_nation])=>{
     return(
@@ -44,7 +12,7 @@ const select_nation=([currunt_nation, set_current_nation])=>{
 }
 
 const select_nation_element=(props, setter)=>{
-    const{id, name, url} = props
+    const{id, name} = props
     const onclick = ()=>{
         console.log(id);
         console.log(name);

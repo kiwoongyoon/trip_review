@@ -1,6 +1,6 @@
 .select_nation{
     float: left;
-    width: 30%;
+    width: 25%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
@@ -19,6 +19,7 @@
     background-color:aqua;
     box-shadow: 0 0 0 3px #000 inset; 
     padding: 5px;
+    border-radius: 20px;
 }
 
 .select_city{
