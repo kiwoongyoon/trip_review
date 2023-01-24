@@ -6,7 +6,8 @@
   align-items: center;
   text-align: center;
   height: 200vh;
-  background-image: url(./img/3.png);
+  box-sizing: inherit;
+  background-image: url(../public/img/3.png);
   background-size: 100vw 200vh 
 }
 
@@ -16,6 +17,7 @@
   width: 90vw;
   height: 300px;
   background-color: blueviolet;
+  margin: 50px;
   padding: 20px;
 }
 

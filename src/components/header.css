@@ -1,36 +1,29 @@
 header{
+  display: flex;
+  flex-direction: row;
   background-color: lightpink;
-  width: 100vw;
-  font-size: 40px;
-  margin: 0px 0px;
+  width: 100%;
+  align-items: center;
 }
 
 .logo_name{
+  align-self: flex-start;
   float: left;
+  font-size: 40px;
   margin-block: 0px;
   padding: 20px;
 }
 
 .logo_menubox{
-  display: flex;
-  float: right;
-  padding: 20px 0px;
+  margin-left: auto;
+
 }
 
 .logo_menubox_item{
-  float: right;
-  padding: 10px;
   width: 40px;
   height: 40px;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
+  padding: 20px;
   background-size: 40px 40px;
-}
-
-.logo_menubox_login{
-  background-image: url("comp_res/login.png");
-}
-
-.logo_menubox_signup{
-  background-image: url("comp_res/signup.png");
+  background-origin: content-box;
+  background-repeat: no-repeat;
 }
