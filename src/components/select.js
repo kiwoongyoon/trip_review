@@ -1,74 +1,66 @@
+import React, { useState } from 'react';
 import "./select.css"
-import nation_list from './data/data.json';
+import board_content from './data/board_content.json';
 
-const select_nation=([currunt_nation, set_current_nation])=>{
+const Query=()=>{
+    const [inputs, setInputs] = useState({
+        "city":"city",
+        "season":"season",
+        "star":"star",
+        "price":"price"
+    });
+
     return(
-        <div className="select_nation">
-            {nation_list.map((nation)=>(
-                select_nation_element(nation, set_current_nation)
-            ))}
+        <div className='query'>
+            <div className='board'>
+                <h1>후기</h1>
+                <div className='inner_board'>{board([inputs, setInputs])}</div>
+            </div>
+            <div className='board'>
+                <h1>매칭</h1>
+                <div className='inner_board'>{matching([inputs, setInputs])}</div>
+            </div>
+            <div className='search'>{search([inputs, setInputs])}</div>
         </div>
     )
 }
 
-const select_nation_element=(props, setter)=>{
-    const{id, name} = props
-    const onclick = ()=>{
-        console.log(id);
-        console.log(name);
-        setter(id);
-    }
+const search=([inputs, setInputs])=>{
     return(
-        <div key={id} className ="select_nation_element" onClick={onclick}>
-            <label>{name}</label>
-        </div>
+        ["city","season","star","price"].map((input)=>(
+            <div>
+                <div className='inner_search'>   
+                    <h1>{input}</h1> 
+                    <input placeholder='1' onChange={(e)=>(
+                        console.log(input),
+                        console.log(e.target.value),
+                        setInputs({...inputs, [input]: e.target.value})
+                    )}/>
+                </div>  
+            </div>
+        ))
     )
 }
 
-const city_list={
-    "1": [
-        "123", "sdfsfs", "sdfaf"
-    ],
-    "2": [
-        "ㅇㄴㄹㄴㄹ", "sdfsfs", "ㅇㅇㄷㅇ"
-    ],
-    "3": [
-        "파리", "sdfsfs", "33ㄴㄹㄴㅇ", "sdfaf"
-    ],
-    "4": [
-        "로마", "sdfsfs", "ㅇㄷ", "sdfaf"
-    ],
-    "5": [
-        "LA", "seded", "ㄴ", "ㅊ"
-    ],
-    "6": [
-        "한국", "22ssaa", "ㅇ", "sdfaf"
-    ],
-}
-
-const select_city=(currunt_nation)=>{
+const board=([inputs, setInputs])=>{
     return(
-        <div className="select_city">
-            {city_list[currunt_nation].map((city)=>(
-                <div key={city} className="select_city_element">
-                    <label>{city}</label>
-                </div>
-            ))}
-        </div>
+        board_content.filter((input=>
+            input.city==inputs["city"]&&
+            input.season==inputs["season"]&&
+            input.star==inputs["star"]&&
+            input.price==inputs["price"]
+            )).map((input)=>(
+            <div>
+                <div className='inner_search'>   
+                    <h1>{input.city}</h1> 
+                    <h1>{input.content}</h1> 
+                </div>  
+            </div>
+        ))
     )
 }
 
-//도시별 테그리스트
-const select_tag=(currunt_nation)=>{
-    return(
-        <div className="select_city">
-            {city_list[currunt_nation].map((city)=>(
-                <div key={city} className="select_city_element">
-                    <label>{city}</label>
-                </div>
-            ))}
-        </div>
-    )
+const matching=([inputs, setInputs])=>{
 }
 
-export {select_nation, select_city, select_tag}
+export default Query
