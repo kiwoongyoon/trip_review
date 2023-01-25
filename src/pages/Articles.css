@@ -13,7 +13,7 @@ ul, li{
 
 a{
     text-decoration: none;
-    color: inherit;
+    color: inherit;      
 }
 
 .board_wrap{
@@ -23,6 +23,14 @@ a{
 
 .board_title{
     margin-bottom: 30px;
+}
+
+.board_title strong{
+    color:rgb(77, 1, 77);
+}
+
+.board_title .button_wrap{
+    float: right;
 }
 
 .board_title strong{
@@ -44,7 +52,7 @@ a{
     min-width: 80px;
     padding: 10px;
     margin-left: 10px;
-    border: 1px solid #000;
+    border: 1px solid rgb(77, 1, 77);
     border-radius: 2px;
     font-size: 1.4rem;
 }
@@ -54,26 +62,26 @@ a{
 }
 
 .button_wrap a.on{
-    background-color: #000;
+    background-color:rgb(77, 1, 77);
     color: white;
 }
 
 .board_list{
     width: 100%;
-    border-top: 2px solid #000;
+    border-top: 2px solid rgb(77, 1, 77);
 }
 
 .board_list>div {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid rgb(77, 1, 77);
     font-size: 0;
 }
 
 .board_list>div.top {
-    border-color: #999;
+    border-color: rgb(77, 1, 77);
 }
 
 .board_list>div:last-child{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(77, 1, 77);
 }
 
 .board_list>div.top>div {
@@ -122,14 +130,14 @@ a{
     display: inline-block;
     width: 32px;
     height: 32px;
-    border: 1px solid #999;
+    border: 1px solid rgb(77, 1, 77);
     border-left: 0;
     line-height: 100%;
     box-sizing: border-box;
 }
 
 .board_page a:first-child{
-    border-left: 1px solid #999;
+    border-left: 1px solid rgb(77, 1, 77);
 }
 
 
@@ -145,25 +153,44 @@ a{
 }
 
 .board_page a.num.on{
-    border-color: #000;
-    background-color: #000;
+    border-color: rgb(77, 1, 77);
+    background-color: rgb(77, 1, 77);
     color: white;
 }
 
+.search_field{
+    padding: 20px;
+    text-align: center;
+}
+
+.search_field input{
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(77, 1, 77);
+}
+
+.search_field button{
+    margin-left: 5px;
+    width: 40px;
+    height: 30px;
+    background-color:rgb(77, 1, 77);
+    color: white;
+}
 .board_view{
     width: 100%;
-    border-top: 2px solid #000;
+    border-top: 2px solid rgb(77, 1, 77);
 }
 
 .board_view .title{
     padding: 20px 15px;
-    border-bottom: 1px dashed #999;
+    border-bottom: 1px dashed rgb(243, 149, 243);
     font-size: 2rem;
 }
 
 .board_view .info{
     padding: 15px;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid rgb(77, 1, 77);
     font-size: 0;
 
 }
@@ -214,14 +241,14 @@ a{
 
 .board_view .content{
     padding: 15px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(77, 1, 77);
     line-height: 160%;
     font-size: 1.4rem;
 }
 
 
 .board_write {
-    border-top: 2px solid #000;
+    border-top: 2px solid rgb(77, 1, 77);
 }
 
 .board_write .title,
@@ -230,8 +257,8 @@ a{
 }
 
 .board_write .info {
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px solid #000;
+    border-top: 1px dashed rgb(243, 149, 243);
+    border-bottom: 1px solid rgb(77, 1, 77);
     font-size: 0;
 }
 
@@ -275,7 +302,7 @@ a{
 }
 
 .board_write .cont {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(77, 1, 77);;
 }
 
 .board_write .cont textarea {
