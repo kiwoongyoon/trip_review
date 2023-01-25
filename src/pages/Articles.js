@@ -25,6 +25,9 @@ const Articles = ()=>{
     return(
         <div class = "board_wrap">
         <div class="board_title">
+            <div class="button_wrap">
+                <a href="/write" class="on">작성하기</a>
+            </div>
             <strong>여행 후기</strong>
             <p>행후에서 당신의 여행 이야기를 작성해보세요!</p>
         </div>
@@ -39,7 +42,7 @@ const Articles = ()=>{
                 </div>
                 <div>
                     <div class="num">2</div>
-                    <div class="title"><a href ="articles/2">글 제목</a></div>
+                    <div class="title"><a href ="articles/2">글 제목2</a></div>
                     <div class="writer">홍길동</div>
                     <div class="date">2023.01.15</div>
                     <div class="count">31</div>
@@ -53,19 +56,20 @@ const Articles = ()=>{
                 </div>
             </div>
             <div class="board_page">
-                <a href="#" class="button first">@@</a>
-                <a href="#" class="button prev">@</a>
+                <a href="#" class="button first">&lt;&lt;</a>
+                <a href="#" class="button prev">&lt;</a>
                 <a href="#" class = "num on">1</a>
                 <a href="#" class = "num">2</a>
                 <a href="#" class = "num">3</a>
                 <a href="#" class = "num">4</a>
                 <a href="#" class = "num">5</a>
-                <a href="#" class="button last">@@</a>
-                <a href="#" class="button next">@</a>
+                <a href="#" class="button last">&gt;</a>
+                <a href="#" class="button next">&gt;&gt;</a>
             </div>
-            <div class="button_wrap">
-                <a href="/write" class="on">등록</a>
-            </div>
+        </div>
+        <div class="search_field">
+                    <input type="text" placeholder="제목으로 검색해보세요."></input> 
+                    <button>검색</button>
         </div>
     </div>
     )

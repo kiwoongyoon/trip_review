@@ -15,7 +15,6 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(204, 204, 204);
 }
 
 .nav {
@@ -24,6 +23,7 @@ a {
   justify-content: space-around;
   height: 8vh;
   background: rgb(0, 33, 65);
+  color:rgb(204, 204, 204);
 }
 .nav__brand {
   text-transform: uppercase;
