@@ -5,6 +5,7 @@ import Articles from './pages/Articles';
 import Edit from './pages/Edit';
 import Write from './pages/Write';
 import Main from './pages/Main';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/articles/:id' element={<Article/>}/>
           <Route path='/write' element={<Write/>}/>
           <Route path='/edit' element={<Edit/>}/>
+          <Route path='/login' element={<Login/>}/>
       </Routes>
     </BrowserRouter>
     </div>
