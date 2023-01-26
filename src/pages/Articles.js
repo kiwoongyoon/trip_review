@@ -26,7 +26,7 @@ const Articles = ()=>{
         <div class = "board_wrap">
         <div class="board_title">
             <div class="button_wrap">
-                <a href="/write" class="on">작성하기</a>
+                <a href="/write" class="on">작성</a>
             </div>
             <strong>여행 후기</strong>
             <p>행후에서 당신의 여행 이야기를 작성해보세요!</p>
