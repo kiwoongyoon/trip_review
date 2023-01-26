@@ -159,8 +159,10 @@ a{
 }
 
 .search_field{
-    padding: 20px;
+    height: 100px;
     text-align: center;
+    font-size: 5px;
+    padding-top: 10px;
 }
 
 .search_field input{
@@ -172,11 +174,13 @@ a{
 
 .search_field button{
     margin-left: 5px;
-    width: 40px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     background-color:rgb(77, 1, 77);
     color: white;
+    font-size: 15px;
 }
+
 .board_view{
     width: 100%;
     border-top: 2px solid rgb(77, 1, 77);
