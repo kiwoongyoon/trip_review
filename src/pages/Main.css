@@ -1,0 +1,51 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200vh;
+    box-sizing: inherit;
+    background-image: url(/public/img/3.png);
+    background-size: 100vw 200vh 
+  }
+  
+  .review_board{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: aliceblue;
+    width: 90vw;
+    height: 300px;
+  }
+  
+  .review_board_content{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color:blanchedalmond;
+  }
+  
+  .review_board_search{
+    float: right;
+    width: 30%;
+    height: 100%;
+    background-color: aquamarine;
+  }
+  
+  .matching_board{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background-color: aliceblue;
+    width: 90vw;
+    height: 300px;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
