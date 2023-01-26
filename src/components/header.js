@@ -5,7 +5,7 @@ const header=()=>{
     return(
         <header>    
             <Link className="logo_name" to="/">여행후기</Link>
-            <div className="logo_menubox">
+            <div className="logo_menubox" >
                 <Link to="/articles">
                     <img className="logo_menubox_item" src="img/board.png" alt="profile"/>
                 </Link>
